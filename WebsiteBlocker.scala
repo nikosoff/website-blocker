@@ -23,7 +23,7 @@ object WebsiteBlocker {
             val currentHour = now.get(Calendar.HOUR_OF_DAY)
 
             if (lowerHourBound <= currentHour && currentHour < upperHourBound) {
-                println("Working hours...")
+                
                 try {
 
                     val content = Source.fromFile(filename).mkString
@@ -41,7 +41,7 @@ object WebsiteBlocker {
             
             }
             else {
-                println("Fun hours...")
+                
                 try {
                     val lines = Source.fromFile(filename).getLines().toList
                     val outputFile = new PrintWriter(new BufferedWriter(new FileWriter(new File(filename))))

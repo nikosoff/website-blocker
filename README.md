@@ -1,6 +1,8 @@
 # website-blocker
 A script that blocks given websites on Windows
 
+In file "block_websites.txt" someone can specify the websites that he/her wants to block.
+
 Open the command prompt as an administrator and then type:
 
 #### scala websiteBlocker.scala 'from' 'to' 
